@@ -57,8 +57,12 @@
             <p class="text-pin">Новинка!</p>
 
             <div class="hero__slider-buttons">
-              <button class="hero__slider-button-back" type="button"></button>
-              <button class="hero__slider-button-forward" type="button"></button>
+              <button class="hero__slider-back" type="button">
+                <svg class="hero__slider-back-img" aria-label="Листать назад"></svg>
+              </button>
+              <button class="hero__slider-forward" type="button">
+                <svg class="hero__slider-forward-img" aria-label="Листать вперед"></svg>
+              </button>
             </div>
 
             <p class="hero__content-header">Декаф Флэт Уайт</p>
@@ -113,6 +117,7 @@
           <h3 class="catalog__title">Каталог кофейных напитков</h3>
 
           <form class="catalog__form" action="https://echo.htmlacademy.ru/" method="get">
+
             <div class="catalog__form-wrapper">
 
             <!-- Рэндж-слайдер цена-->
@@ -138,7 +143,7 @@
                   </div>
                 </fieldset>
 
-              <!-- Филдсет наличие молока-->
+              <!-- Филдсет - наличие молока-->
 
                 <fieldset class="catalog__form-fieldset-milk">
                   <legend class="catalog__form-title">Наличие молока</legend>
@@ -178,7 +183,7 @@
                   </ul>
                 </fieldset>
 
-                <!-- Филдсет страна произрастания-->
+                <!-- Филдсет - страна произрастания-->
 
                 <fieldset class="catalog__form-fieldset-country">
                   <legend class="catalog__form-title">Страна произрастания</legend>
@@ -225,7 +230,6 @@
                     </li>
                   </ul>
                 </fieldset>
-            </div>
 
             <!-- Кнопки формы -->
             <div class="catalog__form-buttons-wrapper">
@@ -233,22 +237,115 @@
               <button class="button catalog__form-reset" type="reset">Сбросить</button>
             </div>
           </div>
+        </form>
 
-          <!-- Сортировка -->
+        <!-- Сортировка -->
+        <div class="catalog__form-sorting-wrapper">
+          <h2 class="catalog__form-sorting-title">Сортировка</h2>
 
-          <div class="catalog__form-sorting-wrapper">
-
-            <h2 class="catalog__form-sorting-title">Сортировка</h2>
-
-              <select class="catalog-sorting-select-control" aria-label="Сортировка">
-                <option value="cheap">По умолчанию</option>
-                <option value="expensive">Сначала дорогие</option>
-                <option value="popular">Сначала популярные</option>
-              </select>
-            </div>
-          </form>
+          <select class="catalog-sorting-select-control" aria-label="Сортировка">
+            <option value="cheap">По умолчанию</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
         </div>
-      </section>
+
+        <!-- Карточки товара -->
+        <div class="products">
+          <div class="products__wrapper">
+            <ul class="products__list">
+              <li class="products__item">
+                <a class="products__item-link" href="#">
+                  <img class="products__item-img" src="" width="" height="" alt="">
+                  <p class="products__item-title">Декаф Флэт Уайт</p>
+                </a>
+                <p class="products__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <span class="price">225&#8381;</span>
+                <button class="button products__button" type="button">В корзину</button>
+              </li>
+
+              <li class="products__item">
+                <a class="products__item-link" href="#">
+                  <img class="products__item-img" src="" width="" height="" alt="">
+                  <p class="products__item-title">Декаф Флэт Уайт</p>
+                </a>
+                <p class="products__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <span class="price">225&#8381;</span>
+                <button class="button products__button" type="button">В корзину</button>
+              </li>
+
+              <li class="products__item">
+                <a class="products__item-link" href="#">
+                  <img class="products__item-img" src="" width="" height="" alt="">
+                  <p class="products__item-title">Декаф Флэт Уайт</p>
+                </a>
+                <p class="products__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <span class="price">225&#8381;</span>
+                <button class="button products__button" type="button">В корзину</button>
+              </li>
+
+              <li class="products__item">
+                <a class="products__item-link" href="#">
+                  <img class="products__item-img" src="" width="" height="" alt="">
+                  <p class="products__item-title">Декаф Флэт Уайт</p>
+                </a>
+                <p class="products__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <span class="price">225&#8381;</span>
+                <button class="button products__button" type="button">В корзину</button>
+              </li>
+
+              <li class="products__item">
+                <a class="products__item-link" href="#">
+                  <img class="products__item-img" src="" width="" height="" alt="">
+                  <p class="products__item-title">Декаф Флэт Уайт</p>
+                </a>
+                <p class="products__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <span class="price">225&#8381;</span>
+                <button class="button products__button" type="button">В корзину</button>
+              </li>
+
+              <li class="products__item">
+                <a class="products__item-link" href="#">
+                  <img class="products__item-img" src="" width="" height="" alt="">
+                  <p class="products__item-title">Декаф Флэт Уайт</p>
+                </a>
+                <p class="products__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <span class="price">225&#8381;</span>
+                <button class="button products__button" type="button">В корзину</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Пагинация -->
+        <div class="pagination">
+          <div class="pagination__wrapper">
+
+            <ol class="pagination__list">
+              <li class="pagination__item"><a class="pagination__item-link" href="">
+                <svg class="pagination__list-back-img" aria-label="Листать назад"></svg></a>
+              </li>
+
+              <li class="pagination__item"><a class="pagination__item-link" href="">
+                <span class="visually-hidden">страница 1</span>1</a>
+              </li>
+
+              <li class="pagination__item"><a class="pagination__item-link pagination__item-link-active" href="">
+                <span class="visually-hidden">страница 2</span>2</a>
+              </li>
+
+              <li class="pagination__item"><a class="pagination__item-link" href="">
+                <span class="visually-hidden">страница 3</span>3</a>
+              </li>
+
+              <li class="pagination__item"><a class="pagination__item-link" href="">
+                <svg class="pagination__forward-img" aria-label="Листать назад"></svg></a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
