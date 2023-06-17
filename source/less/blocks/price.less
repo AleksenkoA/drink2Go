@@ -1,3 +1,7 @@
+.price__content {
+  display: flex;
+}
+
 .price {
   font-size: 20px;
   line-height: 32px;
@@ -11,4 +15,17 @@
   font-weight: 400;
   color: #7859CF;
   text-decoration: line-through;
+}
+
+.price__content-numbers {
+  width: 97px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  @media (min-width: @desktop-width) {
+    align-items: start;
+    justify-content: flex-start;
+  }
 }
