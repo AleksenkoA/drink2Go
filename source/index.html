@@ -275,7 +275,7 @@
             <p class="catalog__form-sorting-title">Сортировка</p>
 
             <select class="catalog-sorting-select-control" aria-label="Сортировка">
-              <option value="cheap">По умолчанию</option>
+              <option value="cheap"> по умолчанию</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
@@ -404,25 +404,36 @@
               <h3 class="title pagination-title visually-hidden">Пагинация</h3>
 
               <ul class="pagination__list">
-                <li class="pagination__item"><a class="pagination__item-link" href="">
-                  <svg class="pagination__list-back-img" aria-label="Листать назад"></svg></a>
+                <li class="pagination__item pagination__item-with-text">
+                  <a class="pagination__item-link" href="#">
+                    <svg class="pagination__item-back-icon" width="6" height="10" aria-label="Листать назад" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.19153 -5.20835e-08L5.41581e-08 1.23899L3.61694 5L3.82956e-07 8.76101L1.19153 10L6 5L1.19153 -5.20835e-08Z" fill="#7859CF"/>
+                    </svg>
+                    <span class="pagination__item-text">Назад</span>
+                  </a>
                 </li>
 
-                <li class="pagination__item"><a class="pagination__item-link" href="">
+                <li class="pagination__item"><a class="pagination__item-link" href="#">
                   <span class="visually-hidden">страница 1</span>1</a>
                 </li>
 
-                <li class="pagination__item"><a class="pagination__item-link pagination__item-link-active" href="">
+                <li class="pagination__item"><a class="pagination__item-link pagination__item-link-active" href="#">
                   <span class="visually-hidden">страница 2</span>2</a>
                 </li>
 
-                <li class="pagination__item"><a class="pagination__item-link" href="">
+                <li class="pagination__item"><a class="pagination__item-link" href="#">
                   <span class="visually-hidden">страница 3</span>3</a>
                 </li>
 
-                <li class="pagination__item"><a class="pagination__item-link" href="">
-                  <svg class="pagination__forward-img" aria-label="Листать назад"></svg></a>
+                <li class="pagination__item pagination__item-with-text">
+                  <a class="pagination__item-link" href="#">
+                    <svg class="pagination__item-forward-icon" width="6" height="10" aria-label="Листать вперед" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.19153 -5.20835e-08L5.41581e-08 1.23899L3.61694 5L3.82956e-07 8.76101L1.19153 10L6 5L1.19153 -5.20835e-08Z" fill="#7859CF"/>
+                    </svg>
+                    <span class="pagination__item-text">Вперёд</span>
+                  </a>
                 </li>
+
               </ul>
             </div>
           </div>
@@ -431,8 +442,11 @@
       </section>
 
       <section class="map">
-        <div class="map__wrapper"></div>
         <h3 class="map__title visually-hidden">Карта</h3>
+        <div class="map__wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7987.2040984471805!2d30.30410631738282!3d59.968623999999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315a4bdf3f1b%3A0x1c8b299cbcd21256!2z0L3QsNCxLiDQoNC10LrQuCDQmtCw0YDQv9C-0LLQutC4!5e0!3m2!1sru!2sru!4v1687078073109!5m2!1sru!2sru" width="320" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
       </section>
 
     </main>
