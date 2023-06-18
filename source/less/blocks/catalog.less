@@ -2,6 +2,15 @@
   background-color: #f8f8f8;
   outline: 5px solid rgba(8, 0, 255, 0.8);
   outline-offset: -5px;
+  padding-top: 50px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 100px;
+  }
 }
 
 .catalog__wrapper {
@@ -10,6 +19,7 @@
   padding: 50px 20px 30px 20px;
   display: flex;
   flex-direction: column;
+  padding-top: 0;
 
   @media (min-width: @tablet-width) {
     width: 728px;
@@ -89,6 +99,8 @@
 .catalog__form-buttons-wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 36px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
