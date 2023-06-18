@@ -7,6 +7,9 @@
 .catalog__wrapper {
   width: 280px;
   margin: 0 auto;
+  padding: 50px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     width: 728px;
@@ -14,19 +17,19 @@
 
   @media (min-width: @desktop-width) {
     width: 1360px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.catalog__wrapper {
-  @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
+    flex-direction: row;
   }
 }
 
 .catalog__form-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.catalog__form {
   display: block;
 
   @media (min-width: @tablet-width) {
