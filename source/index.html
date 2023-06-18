@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -142,136 +145,139 @@
       </section>
 
       <section class="catalog">
+        <p class="text-pin">Каталог</p>
+        <h3 class="title catalog__title">Каталог кофейных напитков</h3>
+
         <div class="catalog__wrapper">
-          <p class="text-pin">Каталог</p>
-          <h3 class="title catalog__title">Каталог кофейных напитков</h3>
 
+          <div class="catalog__wrapper-fieldsets">
 
-          <form class="catalog__form" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="catalog__form-wrapper">
+            <form class="catalog__form" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="catalog__form-wrapper">
 
-            <!-- Рэндж-слайдер цена-->
-              <fieldset class="catalog__form-fieldset-price">
-                <legend class="catalog__form-title">Цена</legend>
+              <!-- Рэндж-слайдер цена-->
+                <fieldset class="catalog__form-fieldset-price">
+                  <legend class="catalog__form-title">Цена</legend>
 
-                  <div class="range">
+                    <div class="range">
 
-                    <div class="range__wrapper">
-                      <label class="range__label-left visually-hidden" for="range__label-left">от</label>
-                      <input class="range__input range__input-left" type="text" value="0" name="min-price" id="range__label-left">
+                      <div class="range__wrapper">
+                        <label class="range__label-left visually-hidden" for="range__label-left">от</label>
+                        <input class="range__input range__input-left" type="text" value="0" name="min-price" id="range__label-left">
 
-                      <label class="range__label-right visually-hidden" for="range__label-right">до</label>
-                      <input class="range__input range__input-right" type="text" value="9000" name="max-price" id="range__label-right">
-                    </div>
+                        <label class="range__label-right visually-hidden" for="range__label-right">до</label>
+                        <input class="range__input range__input-right" type="text" value="123" name="max-price" id="range__label-right">
+                      </div>
 
-                    <div class="range__scale">
-                      <div class="range__bar" style="left: 0; width: 216px;">
-                        <button type="button" class="range__toggle range__toggle-min"><span class="visually-hidden">Изменить минимальную цену</span></button>
-                        <button type="button" class="range__toggle range__toggle-max"><span class="visually-hidden">Изменить максимальную цену</span></button>
+                      <div class="range__scale">
+                        <div class="range__bar" style="left: 0; width: 216px;">
+                          <button type="button" class="range__toggle range__toggle-min"><span class="visually-hidden">Изменить минимальную цену</span></button>
+                          <button type="button" class="range__toggle range__toggle-max"><span class="visually-hidden">Изменить максимальную цену</span></button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </fieldset>
+                  </fieldset>
 
-              <!-- Филдсет - наличие молока-->
+                <!-- Филдсет - наличие молока-->
 
-                <fieldset class="catalog__form-fieldset-milk">
-                  <legend class="catalog__form-title">Наличие молока</legend>
+                  <fieldset class="catalog__form-fieldset-milk">
+                    <legend class="catalog__form-title">Наличие молока</legend>
 
-                  <ul class="catalog__form-list">
-                    <li class="catalog__form-item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="Наличие молока" value="Не важно" checked>
-                          <span class="control-mark"></span>
-                          <span class="control-label">Не важно</span>
-                      </label>
-                    </li>
+                    <ul class="catalog__form-list">
+                      <li class="catalog__form-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="radio" name="Наличие молока" value="Не важно" checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Не важно</span>
+                        </label>
+                      </li>
 
-                    <li class="catalog__form-item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="Наличие молока" value="Только животное">
-                          <span class="control-mark"></span>
-                          <span class="control-label">Только животное</span>
-                      </label>
-                    </li>
+                      <li class="catalog__form-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="radio" name="Наличие молока" value="Только животное">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Только животное</span>
+                        </label>
+                      </li>
 
-                    <li class="catalog__form-item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="Наличие молока" value="Только растительное">
-                          <span class="control-mark"></span>
-                          <span class="control-label">Только растительное</span>
-                      </label>
-                    </li>
+                      <li class="catalog__form-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="radio" name="Наличие молока" value="Только растительное">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Только растительное</span>
+                        </label>
+                      </li>
 
-                    <li class="catalog__form-item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="Наличие молока" value="Без молока">
-                          <span class="control-mark"></span>
-                          <span class="control-label">Без молока</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
+                      <li class="catalog__form-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="radio" name="Наличие молока" value="Без молока">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Без молока</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
 
-                <!-- Филдсет - страна произрастания-->
+                  <!-- Филдсет - страна произрастания-->
 
-                <fieldset class="catalog__form-fieldset-country">
-                  <legend class="catalog__form-title">Страна произрастания</legend>
+                  <fieldset class="catalog__form-fieldset-country">
+                    <legend class="catalog__form-title">Страна произрастания</legend>
 
-                  <ul class="catalog__form-list">
-                    <li class="catalog__form-item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="Страна произрастания" value="Бразилия" checked>
-                          <span class="control-mark"></span>
-                          <span class="control-label">Бразилия</span>
-                      </label>
-                    </li>
+                    <ul class="catalog__form-list">
+                      <li class="catalog__form-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="radio" name="Страна произрастания" value="Бразилия" checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Бразилия</span>
+                        </label>
+                      </li>
 
-                    <li class="catalog__form-item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="Страна произрастания" value="Эфиопия">
-                          <span class="control-mark"></span>
-                          <span class="control-label">Эфиопия</span>
-                      </label>
-                    </li>
+                      <li class="catalog__form-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="radio" name="Страна произрастания" value="Эфиопия">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Эфиопия</span>
+                        </label>
+                      </li>
 
-                    <li class="catalog__form-item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="Страна произрастания" value="Колумбия">
-                          <span class="control-mark"></span>
-                          <span class="control-label">Колумбия</span>
-                      </label>
-                    </li>
+                      <li class="catalog__form-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="radio" name="Страна произрастания" value="Колумбия">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Колумбия</span>
+                        </label>
+                      </li>
 
-                    <li class="catalog__form-item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="Страна произрастания" value="Коста-Рика">
-                          <span class="control-mark"></span>
-                          <span class="control-label">Коста-Рика</span>
-                      </label>
-                    </li>
+                      <li class="catalog__form-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="radio" name="Страна произрастания" value="Коста-Рика">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Коста-Рика</span>
+                        </label>
+                      </li>
 
-                    <li class="catalog__form-item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="Страна произрастания" value="Перу">
-                          <span class="control-mark"></span>
-                          <span class="control-label">Перу</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
-            </form>
+                      <li class="catalog__form-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="radio" name="Страна произрастания" value="Перу">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Перу</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+              </form>
 
-            <!-- Кнопки формы -->
-              <div class="catalog__form-buttons-wrapper">
-                <button class="button catalog__form-submit" type="submit">Применить</button>
-                <button class="button catalog__form-reset" type="reset">Сбросить</button>
-              </div>
+              <!-- Кнопки формы
+                <div class="catalog__form-buttons-wrapper">
+                  <button class="button catalog__form-submit-button" type="submit">Применить</button>
+                  <button class="button catalog__form-reset-button" type="reset">Сбросить</button>
+                </div> -->
 
+        </div>
 
         <!-- Сортировка -->
-          <div class="catalog__form-sorting-wrapper">
+          <!-- <div class="catalog__form-sorting-wrapper">
             <p class="catalog__form-sorting-title">Сортировка</p>
 
             <select class="catalog-sorting-select-control" aria-label="Сортировка">
@@ -279,7 +285,7 @@
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
-          </div>
+          </div> -->
 
         <!-- Карточки товара -->
           <div class="products">
