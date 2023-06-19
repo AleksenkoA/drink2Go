@@ -16,8 +16,13 @@
         <div class="header__wrapper-logo-text">
         <!-- Логотип -->
           <a class="header__logo" href="#">
-            <img class="header__logo-img" src="img/header__logo.svg" width="32" height="36" alt="логотип Drink2Go.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-big.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-middle.svg">
+              <img class="header__logo-img" src="img/logo-small.svg" width="32" height="36" alt="логотип Drink2Go.">
+            </picture>
           </a>
+
           <p class="header__logo-text">Интернет-магазин кофейных напитков</p>
         </div>
 
@@ -457,7 +462,11 @@
 
           <div class="footer__logo">
             <a class="footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="footer__logo-img" src="img/footer-logo.svg" width="82" height="36" alt="логотип Drink2Go.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-big.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-big.svg">
+                <img class="footer__logo-img" src="img/logo-middle.svg" width="82" height="36" alt="логотип Drink2Go.">
+              </picture>
             </a>
             <p class="footer__logo-text">Интернет-магазин кофейных напитков</p>
           </div>

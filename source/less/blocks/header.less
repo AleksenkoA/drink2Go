@@ -16,14 +16,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1400px;
+    width: 1360px;
     margin: 0 auto;
   }
 }
 
 .header__wrapper-logo-text {
   @media (min-width: @desktop-width) {
-    width: 316px;
     display: flex;
     justify-content: space-between;
   }
@@ -111,7 +110,6 @@
 .header__menu-login-text {
   display: none;
 
-
   @media (min-width: @desktop-width) {
     display: flex;
     text-transform: uppercase;
@@ -122,6 +120,17 @@
 .header__logo-img {
   height: 36px;
   padding-top: 12px;
+
+  @media (min-width: @tablet-width) {
+    width: 82px;
+    height: auto;
+    padding-top: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 170px;
+    height: auto;
+  }
 }
 
 .header__logo-text {
@@ -133,8 +142,8 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    width: 129px;
     margin: 0;
     align-items: center;
+    padding-left: 20px;
   }
 }
