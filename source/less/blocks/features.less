@@ -35,6 +35,32 @@
   }
 }
 
+.features__item-speed,
+.features__item-fit,
+.features__item-energy,
+.features__item-eco {
+  position: relative;
+}
+
+.features__item-icon-speed,
+.features__item-icon-fit,
+.features__item-icon-energy,
+.features__item-icon-eco {
+  position: absolute;
+  top: 0;
+  left: 115px;
+
+  @media (min-width: @tablet-width) {
+    top: 14px;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 10px;
+    left: 130px;
+  }
+}
+
 .features__item-content {
   text-align: center;
   padding: 0;
