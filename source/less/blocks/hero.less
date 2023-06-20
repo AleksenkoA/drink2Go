@@ -2,6 +2,7 @@
   background-color: #f3ebe1;
   outline: 5px solid rgba(255, 0, 0, 0.8);
   outline-offset: -5px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 188px;
@@ -110,4 +111,30 @@
       display: block;
     }
   }
+}
+
+.hero__slider-back {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 320px;
+  left: 5px;
+}
+
+.hero__slider-forward {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 320px;
+  right: 5px;
+}
+
+.hero__slider-back,
+.hero__slider-forward {
+  background-color: transparent;
+  border: none;
+}
+
+.hero__slider-back-img {
+  transform: rotate(180deg);
 }
