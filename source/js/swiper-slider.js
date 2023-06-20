@@ -1,5 +1,5 @@
-import Swiper from 'swiper';
-import 'swiper/css';
+import Swiper from '../../node_modules/swiper/swiper-bundle';
+import '../../node_modules/swiper/swiper-bundle.css';
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
