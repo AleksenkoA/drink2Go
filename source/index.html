@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   </head>
   <body class="page__body">
       <!-- Хедер -->
@@ -27,21 +29,31 @@
         </div>
 
         <!-- Навигация -->
-        <nav class="header__menu">
+        <nav class="header__menu header__menu--opened header__menu--nojs">
+
+        <!-- Кнопка бургера на mobile -->
+          <button class="header__menu-toggle" type="button">
+            <svg class="header__menu-toggle-img" width="16" height="12" aria-label="Открыть меню" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V1.5H0V0ZM0 5.25H16V6.75H0V5.25ZM16 10.5H0V12H16V10.5Z" fill="#333333"/>
+            </svg>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
           <ul class="header__menu-list">
-            <li class="header__menu-item header__menu-item--active">
-              <a class="header__menu-link" href="#">Главная</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Каталог</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Доставка</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">О нас</a>
-            </li>
+              <li class="header__menu-item header__menu-item--active">
+                <a class="header__menu-link" href="#">Главная</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Каталог</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Доставка</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">О нас</a>
+              </li>
           </ul>
+        </nav>
 
           <!-- Пользовательское меню -->
           <div class="header__menu-actions">
@@ -60,14 +72,6 @@
             </button>
           </div>
 
-          <!-- Кнопка бургера на mobile -->
-          <button class="header__menu-toggle" type="button">
-            <svg class="header__menu-toggle-img" width="16" height="12" aria-label="Открыть меню" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V1.5H0V0ZM0 5.25H16V6.75H0V5.25ZM16 10.5H0V12H16V10.5Z" fill="#333333"/>
-            </svg>
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </nav>
       </div>
     </header>
 
@@ -517,7 +521,7 @@
       <section class="map">
         <h3 class="map__title visually-hidden">Карта</h3>
         <div class="map__wrapper">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7987.2040984471805!2d30.30410631738282!3d59.968623999999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315a4bdf3f1b%3A0x1c8b299cbcd21256!2z0L3QsNCxLiDQoNC10LrQuCDQmtCw0YDQv9C-0LLQutC4!5e0!3m2!1sru!2sru!4v1687078073109!5m2!1sru!2sru" width="320" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7987.31520083565!2d30.29753958542993!3d59.968163276155224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315a4bdf3f1b%3A0x1c8b299cbcd21256!2z0L3QsNCxLiDQoNC10LrQuCDQmtCw0YDQv9C-0LLQutC4!5e0!3m2!1sru!2str!4v1687258664768!5m2!1sru!2str" width="320" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
       </section>
@@ -652,5 +656,19 @@
     </footer>
 
     <script src="./js/script.js" defer></script>
+    <!-- <script>
+      // Создание карты и установка начальных координат и масштаба
+      var map = L.map('map').setView([51.505, -0.09], 13);
+
+      // Добавление тайлового слоя OpenStreetMap
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+        maxZoom: 18,
+      }).addTo(map);
+
+      // Добавление маркера на карту
+      L.marker([51.5, -0.09]).addTo(map)
+        .bindPopup('Привет, я маркер!').openPopup();
+    </script> -->
   </body>
 </html>

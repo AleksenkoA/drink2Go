@@ -31,6 +31,7 @@
 .header__menu {
   display: flex;
   margin-left: auto;
+  position: relative;
 }
 
 .header__menu-list {
@@ -75,6 +76,10 @@
   display: flex;
   box-sizing: border-box;
 
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -100,6 +105,65 @@
     display: none;
   }
 }
+
+/* Бургерное меню - верхняя палочка
+остальные две палочки внизу - тенями**/
+.header__menu--closed {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  width: 22px;
+  height: 4px;
+  background-color: #81b3d2;
+
+  @media (max-width: @mobile-width-only) {
+    .header__menu--closed .header__menu-item {
+      display: none;
+    }
+  }
+
+  .header__menu--nojs .header__menu-toggle {
+    display: none;
+  }
+
+  .header__menu--nojs .header__menu-item {
+    display: block;
+  }
+}
+
+/*КНОПКА*/
+.header__menu--opened .header__menu-toggle {
+  top: 17px;
+  right: 19px;
+
+  /*Крестик - двумя палочками*/
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -10px;
+    width: 36px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
 
 .header__menu-login-img,
 .header__menu-basket-img,
