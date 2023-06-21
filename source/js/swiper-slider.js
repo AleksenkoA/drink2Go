@@ -3,7 +3,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.brow
 
   const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
 
   // If we need pagination
@@ -22,6 +22,3 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.brow
     el: '.swiper-scrollbar',
   },
 });
-
-
-
