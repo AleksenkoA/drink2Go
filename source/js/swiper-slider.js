@@ -1,11 +1,7 @@
 
-// import Swiper bundle with all modules installed
-import Swiper from 'swiper/bundle';
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
 
-// import styles bundle
-import 'swiper/css/bundle';
-
-const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'vertical',
   loop: true,
@@ -26,3 +22,6 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+
+

@@ -10,9 +10,9 @@
     <link rel="preload" href="./fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
   />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -33,7 +33,7 @@
         </div>
 
         <!-- Навигация -->
-        <nav class="header__menu header__menu--opened header__menu--nojs">
+        <nav class="header__menu header__menu--closed header__menu--nojs">
 
         <!-- Кнопка бургера на mobile -->
           <button class="header__menu-toggle" type="button">
@@ -89,129 +89,88 @@
           <div class="swiper">
             <div class="swiper-wrapper">
 
-              <!-- Слайд#1 -->
-              <div class="swiper-slide swiper-slide-1">
+                <!-- Слайд#1 -->
+                <div class="swiper-slide swiper-slide-1">
 
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/hero-1-desktop.png 1x, img/hero-1-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/hero-1-tablet.png 1x, img/hero-1-tablet@2x.png 2x">
-                  <img class="hero__img" src="img/hero-1-mobile.png" srcset="img/hero-1-mobile@2x.png 2x" width="280" height="280" alt="Изображение Декаф Флэт Уайт.">
-                </picture>
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/hero-1-desktop.png 1x, img/hero-1-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/hero-1-tablet.png 1x, img/hero-1-tablet@2x.png 2x">
+                    <img class="hero__img" src="img/hero-1-mobile.png" srcset="img/hero-1-mobile@2x.png 2x" width="280" height="280" alt="Изображение Декаф Флэт Уайт.">
+                  </picture>
 
-                <div class="hero__content">
-                  <p class="text-pin">Новинка!</p>
+                  <div class="hero__content">
+                    <p class="text-pin">Новинка!</p>
+                    <h2 class="title hero__content-title">Декаф Флэт Уайт</h2>
+                    <p class="hero__content-description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня</p>
 
-                  <div class="hero__slider-buttons">
-                    <button class="hero__slider-back" type="button">
-                      <svg class="hero__slider-back-img" width="16" height="16">
-                        <use xlink:href="img/sprite.svg#arrow-back"></use>
-                      </svg>
-                    </button>
-
-                    <button class="hero__slider-forward" type="button">
-                      <svg class="hero__slider-forward-img" width="16" height="16">
-                        <use xlink:href="img/sprite.svg#arrow-forward"></use>
-                      </svg>
-                    </button>
-                  </div>
-
-                  <h2 class="title hero__content-title">Декаф Флэт Уайт</h2>
-                  <p class="hero__content-description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня</p>
-
-                  <div class="price__content">
-                    <div class="price__content-numbers">
-                      <span class="price price--old">295&#8381;</span>
-                      <span class="price">225&#8381;</span>
+                    <div class="price__content">
+                      <div class="price__content-numbers">
+                        <span class="price price--old">295&#8381;</span>
+                        <span class="price">225&#8381;</span>
+                      </div>
+                      <button class="button hero__button" type="button">Заказать</button>
                     </div>
-                    <button class="button hero__button" type="button">Заказать</button>
                   </div>
+                </div>
+
+                <!-- Слайд#2 -->
+                <div class="swiper-slide swiper-slide-2">
+
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/hero-2-desktop.png 1x, img/hero-2-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/hero-2-tablet.png 1x, img/hero-2-tablet@2x.png 2x">
+                    <img class="hero__img" src="img/hero-2-mobile.png" srcset="img/hero-2-mobile@2x.png 2x" width="280" height="280" alt="Изображение Лавандовый Латте.">
+                  </picture>
+
+                  <div class="hero__content">
+                    <p class="text-pin">Новинка!</p>
+                    <h2 class="title hero__content-title">Лавандовый Латте</h2>
+                    <p class="hero__content-description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+
+                    <div class="price__content">
+                      <div class="price__content-numbers">
+                        <span class="price price--old">285&#8381;</span>
+                        <span class="price">265&#8381;</span>
+                      </div>
+                      <button class="button hero__button" type="button">Заказать</button>
+                    </div>
                 </div>
               </div>
 
-              <!-- Слайд#2 -->
-              <div class="swiper-slide swiper-slide-2">
+                <!-- Слайд#3 -->
+                <div class="swiper-slide swiper-slide-3">
 
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/hero-2-desktop.png 1x, img/hero-2-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/hero-2-tablet.png 1x, img/hero-2-tablet@2x.png 2x">
-                  <img class="hero__img" src="img/hero-2-mobile.png" srcset="img/hero-2-mobile@2x.png 2x" width="280" height="280" alt="Изображение Лавандовый Латте.">
-                </picture>
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/hero-3-desktop.png 1x, img/hero-3-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/hero-3-tablet.png 1x, img/hero-3-tablet@2x.png 2x">
+                    <img class="hero__img" src="img/hero-3-mobile.png" srcset="img/hero-3-mobile@2x.png 2x" width="280" height="280" alt="Изображение Тройной Эспрессо.">
+                  </picture>
 
-                <div class="hero__content">
-                  <p class="text-pin">Новинка!</p>
+                  <div class="hero__content">
+                    <p class="text-pin">Новинка!</p>
+                    <h2 class="title hero__content-title">Тройной Эспрессо</h2>
+                    <p class="hero__content-description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
 
-                  <div class="hero__slider-buttons">
-                    <button class="hero__slider-back" type="button">
-                      <svg class="hero__slider-back-img" width="16" height="16">
-                        <use xlink:href="img/sprite.svg#arrow-back"></use>
-                      </svg>
-                    </button>
-
-                    <button class="hero__slider-forward" type="button">
-                      <svg class="hero__slider-forward-img" width="16" height="16">
-                        <use xlink:href="img/sprite.svg#arrow-forward"></use>
-                      </svg>
-                    </button>
-                  </div>
-
-                  <h2 class="title hero__content-title">Лавандовый Латте</h2>
-                  <p class="hero__content-description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-
-                  <div class="price__content">
-                    <div class="price__content-numbers">
-                      <span class="price price--old">285&#8381;</span>
-                      <span class="price">265&#8381;</span>
+                    <div class="price__content">
+                      <div class="price__content-numbers">
+                        <span class="price price--old">395&#8381;</span>
+                        <span class="price">375&#8381;</span>
+                      </div>
+                      <button class="button hero__button" type="button">Заказать</button>
                     </div>
-                    <button class="button hero__button" type="button">Заказать</button>
                   </div>
                 </div>
-              </div>
 
-              <!-- Слайд#3 -->
-              <div class="swiper-slide swiper-slide-3">
 
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/hero-3-desktop.png 1x, img/hero-3-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/hero-3-tablet.png 1x, img/hero-3-tablet@2x.png 2x">
-                  <img class="hero__img" src="img/hero-3-mobile.png" srcset="img/hero-3-mobile@2x.png 2x" width="280" height="280" alt="Изображение Тройной Эспрессо.">
-                </picture>
-
-                <div class="hero__content">
-                  <p class="text-pin">Новинка!</p>
-
-                  <div class="hero__slider-buttons">
-                    <button class="hero__slider-back" type="button">
-                      <svg class="hero__slider-back-img" width="16" height="16">
-                        <use xlink:href="img/sprite.svg#arrow-back"></use>
-                      </svg>
-                    </button>
-
-                    <button class="hero__slider-forward" type="button">
-                      <svg class="hero__slider-forward-img" width="16" height="16">
-                        <use xlink:href="img/sprite.svg#arrow-forward"></use>
-                      </svg>
-                    </button>
-                  </div>
-
-                  <h2 class="title hero__content-title">Тройной Эспрессо</h2>
-                  <p class="hero__content-description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-
-                  <div class="price__content">
-                    <div class="price__content-numbers">
-                      <span class="price price--old">395&#8381;</span>
-                      <span class="price">375&#8381;</span>
-                    </div>
-                    <button class="button hero__button" type="button">Заказать</button>
-                  </div>
-                </div>
-              </div>
-
+              <!-- If we need navigation buttons -->
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
               <div class="swiper-scrollbar"></div>
 
+            </div>
           </div>
-        </div>
 
         </div>
       </section>
@@ -761,7 +720,8 @@
           </div>
         </section>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-slider.js" defer></script>
     <script src="./js/script.js" defer></script>
 
   </body>
